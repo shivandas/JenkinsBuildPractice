@@ -16,6 +16,6 @@ jobs:
     - name: Build with Maven
       run: mvn package --file pom.xml
     - name: Copy my artifacts
-      run: mkdir /home/myWAR && cp */target/*.war /home/myWAR/
+      run: sudo mkdir /home/myWAR && sudo cp */target/*.war /home/myWAR/
     - name: List the artifacts
-      run: ls -al /home/myWAR/
+      run: sudo ls -al /home/myWAR/
